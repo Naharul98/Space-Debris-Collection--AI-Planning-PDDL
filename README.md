@@ -66,7 +66,17 @@ Whilst the planner found a solution very quickly in a small state space (4.9 sec
 
 ### Problem 2
 The second problem consisted of 2 rockets, but only 1 launch/landing pad and 1 truck. As the rockets cannot be at the same space-point, this added an additional constraint and layer of complexity. Again the truck could move around 5 locations on earth and the no. of space points varied according to the no. of debris pieces, same as before. The results are illustrated below:
+
 ![Benchmark2](https://github.com/Naharul98/Space-Debris-Collection--AI-Planning-PDDL/blob/master/problem2_evaluation_chart.jpg?raw=true)
 
 For this problem the planner successfully split debris collection among the two rockets. There was, however, some time wasted when the truck moves back and forth between the service dock and landing pad. 
+
+### Problem 3
+The goal of the third problem was to analyze the effect that different number of rockets has on the planner. The number of instances of other objects were kept constant and only varied the number of rockets were varied to record the findings for the analysis. The problem definition consisted of a single instance oftruck and 5 locations on earth. In addition, we had 5 debris in place coupled with 7 points with a total of 20 edges between them. The finding is illustrated below.
+
+![Benchmark2](https://github.com/Naharul98/Space-Debris-Collection--AI-Planning-PDDL/blob/master/problem3_evaluation_chart.jpg?raw=true)
+
+The planner found a solution in a reasonable amount of time in a small state space, however, for larger ones with over 3 rockets the planner simply ran out of memory due to OPTIC’s limitation being a 32-bit application. 
+
+**Therefore,this problem does not scale well with the OPTIC planner.**
 
