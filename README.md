@@ -43,9 +43,18 @@ Thus long queues can form where rockets are left waiting on the launch pad. Wher
 The model takes into consideration the effects of traffic, when there are multiple trucks travelling along the same road they are likely to drive slower thus increasing the travel time between two places. The model keeps a record of how many trucks are on any given road at any given time and increases the travel time for each truck proportionally to this, the greater the ammount of trucks on a road the greater the level of congestion.
 
 
-#### Model of Space
+### Model of Space
 The space is modelled by a 3D grid abstraction, consisting of vertices, which are modelled as points, and edges, which are modelled by paths. The changing of orbit of a rocket is modelled by travelling along a path in straight lines along the edges. the trajectory of a real rocket is likely to be curved, however this detail is abstracted from the model and instead the time taken to travel between points whether straight or curved is defined by the problem designer.
 
+##### Movement of Rocket in space
+For a rocket to increase its orbital radius, it can move upwards vertically for it to decrease its orbital radius it can travel downwards vertically. For the rocket to maintain its orbital radius but to shift directions it can move laterally. These actions can be performed by the rocket to navigate the space grid, travelling with and against gravity are likely to have different energy requirements. Moreover, the time peroid of going to a higher orbit or lower orbit are likely to be different then just changing direction since the rocket follows a more curved path, thus the actions have been separated into different axis.
 
+The model prevents collisions in space between rockets and between rockets and debris. Two rockets are not permitted to be at the same point at the same time, two rockets cannot travel along the same path in opposite directions and multiple rockets cannot travel along different paths towards the same point simultaneously. Furthermore, whenever a rocket comes into close proximity to a debris it must enter tracking mode where it follows the debris but cannot move else where to avoid the rocket and debris colliding.
 
+#### Energy consumption of rocket within space
+The energy required to travel between points in space is calculated by the problem designer. Since the energy required for the rocket to travel between points varies proportional to the total mass of the rocket, and the rocket’s mass is likely to vary given the number of debris it picks up, the energy requirement calculations are expected to factor out mass of the rocket to give a more accurate energy constraint throughout, the energy requirement is then multiplied by total mass of the rocket in the model when the function is needed.
 
+As the rocket holds a larger number of debris, the mass of the rocket increases therefore the energy consumption rate of the rocket increases. This means the rocket can stay in space for a shorter ammount of time for a given ammount of fuel at a higher mass compared to a lower mass. The planner can then decide between picking up greater quanties of mass and staying in orbit for longer absorbing energy from the sun or, returning to Earth and depositing the debris quickly.
+
+#### Using solar power within space to replenish rocket energy
+Whilst a rocket is in orbit it can open its solar cells and begin absorbing solar energy from the sun. A rocket cannot have its solar cells open whilst tracking a debris to avoid damaging the rocket, altough this means the rocket cannot both move and absorb solar energy at the same time the effects would be negligble in reality since the eneregy expended in rocket thrusts exceeds that gained by the rocket from the sun.
