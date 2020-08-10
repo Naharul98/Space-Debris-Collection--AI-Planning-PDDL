@@ -25,3 +25,17 @@ optic-clp.exe -N domain.pddl problem.pddl
 optic-clp.exe -N domain.pddl problem2.pddl
 ```
 
+#### Domain Description
+
+**Domain within Earth**
+The types of places within earth:*
+* service docks where rockets can be stored. 
+* landing and launch pads from which rockets can take off and land.
+* debris bins where debris can be safely disposed of
+* refuel stations where rockets can replenish their energy supply.
+* The Earth is modelled as set of places which can be travelled to and from if there exists a set of roads that connects them.
+* Roads can be traversed by truck, trucks can pick up and drop rockets and/or debris to and from different places.
+* 
+**Domain within Space**
+* The space is modelled by a 3D grid abstraction, consisting of vertices, which are modelled as points, and edges, which are modelled by paths.
+
