@@ -61,3 +61,5 @@ Debris collection is modelled by rockets picking up debris orbitting the earth a
 The first problem definition was constructed with the purpose of benchmarking in mind. it consisted of a single truck, which could move between 5 location on earth. Subsequently, the number of debris pieces were increased proportionally to the number of space points, such that, number of space point is two more than number of debris. The results are summarized below:
 
 ![Benchmark](https://github.com/Naharul98/Space-Debris-Collection--AI-Planning-PDDL/blob/master/problem1_evaluation_chart.jpg?raw=true)
+
+Whilst the planner found a solution very quickly in a small state space (4.9 seconds for a single piece of debris), for larger ones the time rose exponentially (167 seconds for 9 debris pieces). Finally, with over 10 pieces of debris the planner simply ran out of memory *(as OPTIC for Windows is a 32-bit application it is unable to use more than 4GB of memory).*
