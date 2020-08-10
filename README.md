@@ -78,6 +78,8 @@ The goal of the third problem was to analyze the effect that different number of
 
 The planner found a solution in a reasonable amount of time in a small state space, however, for larger ones with over 3 rockets the planner simply ran out of memory due to OPTIC’s limitation being a 32-bit application. 
 
-**Therefore,this problem instance did not scale well with the OPTIC planner, primarily because of its 32 bit limitation with regards to memory usage.**
+## Conclusion
+* Therefore, this problem instance do not scale well with the OPTIC planner, primarily because of its 32 bit limitation with regards to memory usage.
+* The planned does not always find the most optimal solution, however, in those cases, they are reasonably close to optimal.
 
 
