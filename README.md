@@ -1,5 +1,5 @@
 # Solving space debris collection using AI Planning
-**Using artificial intelligence automated planning to efficiently execute space debris collection**
+**Using artificial intelligence automated planning to efficiently execute and evaluate space debris collection**
 
 
 ## AI Planning tool used:
