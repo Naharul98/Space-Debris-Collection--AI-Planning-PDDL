@@ -11,7 +11,6 @@ This project uses an AI planning tool known as [OPTIC](https://nms.kcl.ac.uk/pla
 ```
 cd <project directory path>
 optic-clp.exe -N <domain file name> <problem file name>
-
 ```
 Example:
 ```
@@ -19,6 +18,5 @@ cd C:\Optic
 
 optic-clp.exe -N domain.pddl problem.pddl
 optic-clp.exe -N domain.pddl problem2.pddl
-
 ```
 
