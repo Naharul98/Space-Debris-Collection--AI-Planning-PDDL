@@ -20,7 +20,6 @@ optic-clp.exe -N <domain file name> <problem file name>
 Example:
 ```
 cd C:\Optic
-
 optic-clp.exe -N domain.pddl problem.pddl
 optic-clp.exe -N domain.pddl problem2.pddl
 ```
@@ -54,5 +53,9 @@ As the rocket holds a larger number of debris, the mass of the rocket increases 
 #### Using solar power within space to replenish rocket energy:
 Whilst a rocket is in orbit it can open its solar cells and begin absorbing solar energy from the sun. However, a rocket cannot have its solar cells open whilst tracking a debris to avoid damaging the rocket.
 
-### Modelling space debris collection:
+### Model of space debris collection:
 Debris collection is modelled by rockets picking up debris orbitting the earth and bringing them back. In order for a rocket to safely collect a debris, it must first be within close proximity to the debris in order for the rocket to begin tracking. Then the rocket must make an assessment of whether it can pick up the debris given its maximum holding capacity and fuel constraints. If the rocket makes a successful assessment then the rocket can pick the debris up and stop tracking the debris.The debris are then brought back to Earth to be disposed of. 
+
+## Planner Evaluation (based on the problem files defined):
+### Problem 1
+The first problem definition was constructed with the purpose of benchmarking in mind. it consisted of a single truck, which could move between 5 location on earth. Subsequently, the number of debris pieces were increased proportionally to the number of space points, such that, number of space point is two more than number of debris. The results are summarized below:
