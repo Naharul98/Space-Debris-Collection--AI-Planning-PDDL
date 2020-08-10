@@ -1,6 +1,7 @@
 # Solving space debris collection using AI Planning
 **Using artificial intelligence automated planning to efficiently execute and evaluate space debris collection**
 
+> Testing and evaluation results of the AI Planned is given further down the line in the readme
 
 ## AI Planning tool used:
 This project uses an AI planning tool known as [OPTIC](https://nms.kcl.ac.uk/planning/index.html). A ready to use version is included in this project.
