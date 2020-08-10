@@ -81,6 +81,6 @@ The planner found a solution in a reasonable amount of time in a small state spa
 
 ## Conclusion
 * Problem instances do not scale well with the OPTIC planner, primarily because of its 32 bit limitation with regards to memory usage.
-* The planned does not always find the most optimal solution, however, in those cases, they are reasonably close to optimal.
+* The plan output by the planner does not always find the most optimal solution, however, in those cases, they are reasonably close to optimal.
 
 
