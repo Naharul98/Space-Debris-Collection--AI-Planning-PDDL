@@ -1,4 +1,4 @@
-# Space-Debris-Collection--AI-Planning
+# Solving space debris collection using AI Planning
 **Using artificial intelligence automated planning to efficiently execute space debris collection**
 
 
