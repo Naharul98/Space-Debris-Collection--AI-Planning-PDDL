@@ -26,7 +26,7 @@ optic-clp.exe -N domain.pddl problem2.pddl
 ```
 
 ### Domain Description
-**Domain within Earth**
+##### Domain within Earth
 
 The types of places in earth consist of service docks where rockets can be stored, landing and launch pads from which rockets can take off and land, debris bins where debris can be safely disposed of and refuel stations where rockets can replenish their energy supply.
 
