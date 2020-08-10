@@ -3,7 +3,7 @@
 
 
 ### AI Planning tool used:
-This project uses an AI planning tool known as [OPTIC](https://nms.kcl.ac.uk/planning/index.html)
+This project uses an AI planning tool known as [OPTIC](https://nms.kcl.ac.uk/planning/index.html). The ready to use binary is included in this project
 
 ### Running the AI planner:
 ```
