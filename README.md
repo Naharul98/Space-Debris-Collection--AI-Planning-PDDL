@@ -12,7 +12,7 @@ The domain of the space debris collection is defined in the following file:
 In order to test the planner, 3 different problems within the domain is defined. These are defined in the following files:
 > problem1.pddl, problem2.pddl and problem3.pddl
 
-# Running the AI planner:
+## Running the AI planner:
 ```
 cd <project directory path>
 optic-clp.exe -N <domain file name> <problem file name>
