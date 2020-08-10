@@ -59,3 +59,5 @@ Debris collection is modelled by rockets picking up debris orbitting the earth a
 ## Planner Evaluation (based on the problem files defined):
 ### Problem 1
 The first problem definition was constructed with the purpose of benchmarking in mind. it consisted of a single truck, which could move between 5 location on earth. Subsequently, the number of debris pieces were increased proportionally to the number of space points, such that, number of space point is two more than number of debris. The results are summarized below:
+
+![Benchmark](https://github.com/Naharul98/Space-Debris-Collection--AI-Planning-PDDL/blob/master/problem1_evaluation_chart.jpg?raw=true)
