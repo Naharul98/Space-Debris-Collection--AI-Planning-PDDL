@@ -47,29 +47,24 @@ The trajectory of a real rocket is likely to be curved, however this detail is a
 
 #### Energy consumption of rocket within space:
 * As the rocket holds a larger number of debris, the mass of the rocket increases therefore the energy consumption rate of the rocket increases.
-
-The planner can then decide between picking up greater quanties of mass and staying in orbit for longer or returning to Earth and depositing the debris quickly.
+* The planner can then decide between picking up greater quanties of mass and staying in orbit for longer or returning to Earth and depositing the debris quickly.
 
 #### Using solar power within space to replenish rocket energy:
-Whilst a rocket is in orbit it can open its solar cells and begin absorbing solar energy from the sun. 
+* Whilst a rocket is in orbit it can open its solar cells and begin absorbing solar energy from the sun. 
 
 ## Planner Evaluation (based on the problem files defined):
 ### Problem 1
-The first problem definition was constructed with the purpose of benchmarking in mind. it consisted of a single truck, which could move between 5 location on earth. Subsequently, the number of debris pieces were increased proportionally to the number of space points, such that, number of space point is two more than number of debris. The results are summarized below:
-
 ![Benchmark1](https://github.com/Naharul98/Space-Debris-Collection--AI-Planning-PDDL/blob/master/problem1_evaluation_chart.jpg?raw=true)
 
 Whilst the planner found a solution very quickly in a small state space (4.9 seconds for a single piece of debris), for larger ones the time rose exponentially (167 seconds for 9 debris pieces). Finally, with over 10 pieces of debris the planner simply ran out of memory *(as OPTIC for Windows is a 32-bit application it is unable to use more than 4GB of memory).*
 
 ### Problem 2
-The second problem consisted of 2 rockets, but only 1 launch/landing pad and 1 truck. As the rockets cannot be at the same space-point, this added an additional constraint and layer of complexity. Again the truck could move around 5 locations on earth and the no. of space points varied according to the no. of debris pieces, same as before. The results are illustrated below:
 
 ![Benchmark2](https://github.com/Naharul98/Space-Debris-Collection--AI-Planning-PDDL/blob/master/problem2_evaluation_chart.jpg?raw=true)
 
 For this problem the planner successfully split debris collection among the two rockets. There was, however, some time wasted when the truck moves back and forth between the service dock and landing pad. 
 
 ### Problem 3
-The goal of the third problem was to analyze the effect that different number of rockets has on the planner. The number of instances of other objects were kept constant and only varied the number of rockets were varied to record the findings for the analysis. The problem definition consisted of a single instance oftruck and 5 locations on earth. In addition, we had 5 debris in place coupled with 7 points with a total of 20 edges between them. The finding is illustrated below.
 
 ![Benchmark2](https://github.com/Naharul98/Space-Debris-Collection--AI-Planning-PDDL/blob/master/problem3_evaluation_chart.jpg?raw=true)
 
